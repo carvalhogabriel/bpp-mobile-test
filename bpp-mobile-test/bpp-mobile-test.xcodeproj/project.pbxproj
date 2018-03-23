@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		784C33512065AA4C00392F97 /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784C33502065AA4C00392F97 /* LoginApi.swift */; };
+		784C33532065AA9200392F97 /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784C33522065AA9200392F97 /* ApiUtils.swift */; };
+		78A3117A20659A88006F03BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3117920659A88006F03BD /* AppDelegate.swift */; };
+		78A3117C20659A88006F03BD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3117B20659A88006F03BD /* LoginViewController.swift */; };
+		78A3117F20659A88006F03BD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A3117D20659A88006F03BD /* Login.storyboard */; };
+		78A3118220659A88006F03BD /* bpp_mobile_test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78A3118020659A88006F03BD /* bpp_mobile_test.xcdatamodeld */; };
+		78A3118420659A88006F03BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A3118320659A88006F03BD /* Assets.xcassets */; };
+		78A3118720659A88006F03BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A3118520659A88006F03BD /* LaunchScreen.storyboard */; };
+		78A3119220659A88006F03BD /* bpp_mobile_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3119120659A88006F03BD /* bpp_mobile_testTests.swift */; };
+		78A3119D20659A88006F03BD /* bpp_mobile_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3119C20659A88006F03BD /* bpp_mobile_testUITests.swift */; };
+		78A311AB20659EA7006F03BD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 78A311AA20659EA7006F03BD /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78A3118E20659A88006F03BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78A3116E20659A88006F03BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78A3117520659A88006F03BD;
+			remoteInfo = "bpp-mobile-test";
+		};
+		78A3119920659A88006F03BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78A3116E20659A88006F03BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78A3117520659A88006F03BD;
+			remoteInfo = "bpp-mobile-test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		784C33502065AA4C00392F97 /* LoginApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApi.swift; sourceTree = "<group>"; };
+		784C33522065AA9200392F97 /* ApiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
+		78A3117620659A88006F03BD /* bpp-mobile-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bpp-mobile-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A3117920659A88006F03BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78A3117B20659A88006F03BD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		78A3117E20659A88006F03BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		78A3118120659A88006F03BD /* bpp_mobile_test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bpp_mobile_test.xcdatamodel; sourceTree = "<group>"; };
+		78A3118320659A88006F03BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78A3118620659A88006F03BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78A3118820659A88006F03BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78A3118D20659A88006F03BD /* bpp-mobile-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bpp-mobile-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A3119120659A88006F03BD /* bpp_mobile_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bpp_mobile_testTests.swift; sourceTree = "<group>"; };
+		78A3119320659A88006F03BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78A3119820659A88006F03BD /* bpp-mobile-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bpp-mobile-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A3119C20659A88006F03BD /* bpp_mobile_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bpp_mobile_testUITests.swift; sourceTree = "<group>"; };
+		78A3119E20659A88006F03BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78A311AA20659EA7006F03BD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78A3117320659A88006F03BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78A3118A20659A88006F03BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78A3119520659A88006F03BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		784C334E2065AA3200392F97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				784C334F2065AA3700392F97 /* API */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		784C334F2065AA3700392F97 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				784C33502065AA4C00392F97 /* LoginApi.swift */,
+				784C33522065AA9200392F97 /* ApiUtils.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		78A3116D20659A88006F03BD = {
+			isa = PBXGroup;
+			children = (
+				78A3117820659A88006F03BD /* bpp-mobile-test */,
+				78A3119020659A88006F03BD /* bpp-mobile-testTests */,
+				78A3119B20659A88006F03BD /* bpp-mobile-testUITests */,
+				78A3117720659A88006F03BD /* Products */,
+				78A311AA20659EA7006F03BD /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+		78A3117720659A88006F03BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78A3117620659A88006F03BD /* bpp-mobile-test.app */,
+				78A3118D20659A88006F03BD /* bpp-mobile-testTests.xctest */,
+				78A3119820659A88006F03BD /* bpp-mobile-testUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78A3117820659A88006F03BD /* bpp-mobile-test */ = {
+			isa = PBXGroup;
+			children = (
+				784C334E2065AA3200392F97 /* Model */,
+				78A311AE2065A463006F03BD /* Supporting Files */,
+				78A311AD2065A449006F03BD /* View */,
+				78A311AC2065A437006F03BD /* Controller */,
+				78A3117920659A88006F03BD /* AppDelegate.swift */,
+				78A3118520659A88006F03BD /* LaunchScreen.storyboard */,
+				78A3118820659A88006F03BD /* Info.plist */,
+				78A3118020659A88006F03BD /* bpp_mobile_test.xcdatamodeld */,
+			);
+			path = "bpp-mobile-test";
+			sourceTree = "<group>";
+		};
+		78A3119020659A88006F03BD /* bpp-mobile-testTests */ = {
+			isa = PBXGroup;
+			children = (
+				78A3119120659A88006F03BD /* bpp_mobile_testTests.swift */,
+				78A3119320659A88006F03BD /* Info.plist */,
+			);
+			path = "bpp-mobile-testTests";
+			sourceTree = "<group>";
+		};
+		78A3119B20659A88006F03BD /* bpp-mobile-testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				78A3119C20659A88006F03BD /* bpp_mobile_testUITests.swift */,
+				78A3119E20659A88006F03BD /* Info.plist */,
+			);
+			path = "bpp-mobile-testUITests";
+			sourceTree = "<group>";
+		};
+		78A311AC2065A437006F03BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78A3117B20659A88006F03BD /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		78A311AD2065A449006F03BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78A3117D20659A88006F03BD /* Login.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		78A311AE2065A463006F03BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78A3118320659A88006F03BD /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78A3117520659A88006F03BD /* bpp-mobile-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78A311A120659A88006F03BD /* Build configuration list for PBXNativeTarget "bpp-mobile-test" */;
+			buildPhases = (
+				78A3117220659A88006F03BD /* Sources */,
+				78A3117320659A88006F03BD /* Frameworks */,
+				78A3117420659A88006F03BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "bpp-mobile-test";
+			productName = "bpp-mobile-test";
+			productReference = 78A3117620659A88006F03BD /* bpp-mobile-test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78A3118C20659A88006F03BD /* bpp-mobile-testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78A311A420659A88006F03BD /* Build configuration list for PBXNativeTarget "bpp-mobile-testTests" */;
+			buildPhases = (
+				78A3118920659A88006F03BD /* Sources */,
+				78A3118A20659A88006F03BD /* Frameworks */,
+				78A3118B20659A88006F03BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78A3118F20659A88006F03BD /* PBXTargetDependency */,
+			);
+			name = "bpp-mobile-testTests";
+			productName = "bpp-mobile-testTests";
+			productReference = 78A3118D20659A88006F03BD /* bpp-mobile-testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		78A3119720659A88006F03BD /* bpp-mobile-testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78A311A720659A88006F03BD /* Build configuration list for PBXNativeTarget "bpp-mobile-testUITests" */;
+			buildPhases = (
+				78A3119420659A88006F03BD /* Sources */,
+				78A3119520659A88006F03BD /* Frameworks */,
+				78A3119620659A88006F03BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78A3119A20659A88006F03BD /* PBXTargetDependency */,
+			);
+			name = "bpp-mobile-testUITests";
+			productName = "bpp-mobile-testUITests";
+			productReference = 78A3119820659A88006F03BD /* bpp-mobile-testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78A3116E20659A88006F03BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = GabrielGuerrero;
+				TargetAttributes = {
+					78A3117520659A88006F03BD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					78A3118C20659A88006F03BD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 78A3117520659A88006F03BD;
+					};
+					78A3119720659A88006F03BD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 78A3117520659A88006F03BD;
+					};
+				};
+			};
+			buildConfigurationList = 78A3117120659A88006F03BD /* Build configuration list for PBXProject "bpp-mobile-test" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78A3116D20659A88006F03BD;
+			productRefGroup = 78A3117720659A88006F03BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78A3117520659A88006F03BD /* bpp-mobile-test */,
+				78A3118C20659A88006F03BD /* bpp-mobile-testTests */,
+				78A3119720659A88006F03BD /* bpp-mobile-testUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78A3117420659A88006F03BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A3118720659A88006F03BD /* LaunchScreen.storyboard in Resources */,
+				78A3118420659A88006F03BD /* Assets.xcassets in Resources */,
+				78A311AB20659EA7006F03BD /* README.md in Resources */,
+				78A3117F20659A88006F03BD /* Login.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78A3118B20659A88006F03BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78A3119620659A88006F03BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78A3117220659A88006F03BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784C33512065AA4C00392F97 /* LoginApi.swift in Sources */,
+				784C33532065AA9200392F97 /* ApiUtils.swift in Sources */,
+				78A3117C20659A88006F03BD /* LoginViewController.swift in Sources */,
+				78A3118220659A88006F03BD /* bpp_mobile_test.xcdatamodeld in Sources */,
+				78A3117A20659A88006F03BD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78A3118920659A88006F03BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A3119220659A88006F03BD /* bpp_mobile_testTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78A3119420659A88006F03BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78A3119D20659A88006F03BD /* bpp_mobile_testUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78A3118F20659A88006F03BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78A3117520659A88006F03BD /* bpp-mobile-test */;
+			targetProxy = 78A3118E20659A88006F03BD /* PBXContainerItemProxy */;
+		};
+		78A3119A20659A88006F03BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78A3117520659A88006F03BD /* bpp-mobile-test */;
+			targetProxy = 78A3119920659A88006F03BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78A3117D20659A88006F03BD /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78A3117E20659A88006F03BD /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+		78A3118520659A88006F03BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78A3118620659A88006F03BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78A3119F20659A88006F03BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78A311A020659A88006F03BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78A311A220659A88006F03BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XKFCJ2D2M6;
+				INFOPLIST_FILE = "bpp-mobile-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bpp-mobile-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78A311A320659A88006F03BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XKFCJ2D2M6;
+				INFOPLIST_FILE = "bpp-mobile-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bpp-mobile-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78A311A520659A88006F03BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "bpp-mobile-testTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bpp-mobile-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bpp-mobile-test.app/bpp-mobile-test";
+			};
+			name = Debug;
+		};
+		78A311A620659A88006F03BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "bpp-mobile-testTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bpp-mobile-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bpp-mobile-test.app/bpp-mobile-test";
+			};
+			name = Release;
+		};
+		78A311A820659A88006F03BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "bpp-mobile-testUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bpp-mobile-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "bpp-mobile-test";
+			};
+			name = Debug;
+		};
+		78A311A920659A88006F03BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "bpp-mobile-testUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bpp-mobile-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "bpp-mobile-test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78A3117120659A88006F03BD /* Build configuration list for PBXProject "bpp-mobile-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A3119F20659A88006F03BD /* Debug */,
+				78A311A020659A88006F03BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78A311A120659A88006F03BD /* Build configuration list for PBXNativeTarget "bpp-mobile-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A311A220659A88006F03BD /* Debug */,
+				78A311A320659A88006F03BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78A311A420659A88006F03BD /* Build configuration list for PBXNativeTarget "bpp-mobile-testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A311A520659A88006F03BD /* Debug */,
+				78A311A620659A88006F03BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78A311A720659A88006F03BD /* Build configuration list for PBXNativeTarget "bpp-mobile-testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78A311A820659A88006F03BD /* Debug */,
+				78A311A920659A88006F03BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		78A3118020659A88006F03BD /* bpp_mobile_test.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				78A3118120659A88006F03BD /* bpp_mobile_test.xcdatamodel */,
+			);
+			currentVersion = 78A3118120659A88006F03BD /* bpp_mobile_test.xcdatamodel */;
+			path = bpp_mobile_test.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 78A3116E20659A88006F03BD /* Project object */;
+}
