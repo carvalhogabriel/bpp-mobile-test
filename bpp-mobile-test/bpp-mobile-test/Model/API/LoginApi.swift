@@ -19,7 +19,7 @@ public class LoginApi {
         config.timeoutIntervalForRequest = 25
         config.timeoutIntervalForResource = ApiUtils.ApiConstants.TIME_OUT_INTERVAL_FOR_RESOURCE
         
-//        var delegate = DataRequestDelegate()
+        var delegate = DataRequestDelegate()
         
         var session = URLSession(configuration: config, delegate: delegate as URLSessionDelegate, delegateQueue: OperationQueue.main)
         
