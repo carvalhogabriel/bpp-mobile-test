@@ -2,7 +2,7 @@
 //  ApiUtils.swift
 //  bpp-mobile-test
 //
-//  Created by School Picture Dev on 23/03/18.
+//  Created by Gabriel Carvalho Dev on 23/03/18.
 //  Copyright © 2018 GabrielGuerrero. All rights reserved.
 //
 
@@ -18,5 +18,13 @@ public class ApiUtils {
         #endif
         
         static let TIME_OUT_INTERVAL_FOR_RESOURCE: TimeInterval = 300
+    }
+    
+    static let sharedInstance = ApiUtils()
+    
+    func webserviceRequestBuilder(_ servicePath: String) -> URLRequest {
+        let url = URL(string: ApiConstants.API_URL + servicePath)
+        let request = URLRequest(url: url!)
+        return request
     }
 }

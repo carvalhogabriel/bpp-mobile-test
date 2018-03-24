@@ -2,7 +2,7 @@
 //  bpp_mobile_testTests.swift
 //  bpp-mobile-testTests
 //
-//  Created by School Picture Dev on 23/03/18.
+//  Created by Gabriel Carvalho Dev on 23/03/18.
 //  Copyright © 2018 GabrielGuerrero. All rights reserved.
 //
 

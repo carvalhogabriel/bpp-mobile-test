@@ -18,6 +18,9 @@
 		78A3119220659A88006F03BD /* bpp_mobile_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3119120659A88006F03BD /* bpp_mobile_testTests.swift */; };
 		78A3119D20659A88006F03BD /* bpp_mobile_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3119C20659A88006F03BD /* bpp_mobile_testUITests.swift */; };
 		78A311AB20659EA7006F03BD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 78A311AA20659EA7006F03BD /* README.md */; };
+		78F984CE20666BEA00A25F0B /* DataRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F984CD20666BEA00A25F0B /* DataRequestDelegate.swift */; };
+		78F984D220666E8700A25F0B /* TokenRefresher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F984D120666E8700A25F0B /* TokenRefresher.swift */; };
+		78F984D42066932100A25F0B /* TimeLine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78F984D32066932100A25F0B /* TimeLine.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		78A3119C20659A88006F03BD /* bpp_mobile_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bpp_mobile_testUITests.swift; sourceTree = "<group>"; };
 		78A3119E20659A88006F03BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78A311AA20659EA7006F03BD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		78F984CD20666BEA00A25F0B /* DataRequestDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequestDelegate.swift; sourceTree = "<group>"; };
+		78F984D120666E8700A25F0B /* TokenRefresher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRefresher.swift; sourceTree = "<group>"; };
+		78F984D32066932100A25F0B /* TimeLine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimeLine.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +99,10 @@
 		784C334F2065AA3700392F97 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				78F984CF20666E7300A25F0B /* Requests */,
 				784C33502065AA4C00392F97 /* LoginApi.swift */,
 				784C33522065AA9200392F97 /* ApiUtils.swift */,
+				78F984CD20666BEA00A25F0B /* DataRequestDelegate.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -165,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				78A3117D20659A88006F03BD /* Login.storyboard */,
+				78F984D32066932100A25F0B /* TimeLine.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -175,6 +184,22 @@
 				78A3118320659A88006F03BD /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78F984CF20666E7300A25F0B /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				78F984D020666E7A00A25F0B /* Authentication */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		78F984D020666E7A00A25F0B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				78F984D120666E8700A25F0B /* TokenRefresher.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78A3118720659A88006F03BD /* LaunchScreen.storyboard in Resources */,
+				78F984D42066932100A25F0B /* TimeLine.storyboard in Resources */,
 				78A3118420659A88006F03BD /* Assets.xcassets in Resources */,
 				78A311AB20659EA7006F03BD /* README.md in Resources */,
 				78A3117F20659A88006F03BD /* Login.storyboard in Resources */,
@@ -314,8 +340,10 @@
 			files = (
 				784C33512065AA4C00392F97 /* LoginApi.swift in Sources */,
 				784C33532065AA9200392F97 /* ApiUtils.swift in Sources */,
+				78F984D220666E8700A25F0B /* TokenRefresher.swift in Sources */,
 				78A3117C20659A88006F03BD /* LoginViewController.swift in Sources */,
 				78A3118220659A88006F03BD /* bpp_mobile_test.xcdatamodeld in Sources */,
+				78F984CE20666BEA00A25F0B /* DataRequestDelegate.swift in Sources */,
 				78A3117A20659A88006F03BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
