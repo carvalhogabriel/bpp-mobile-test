@@ -131,12 +131,11 @@
 		78A3117820659A88006F03BD /* bpp-mobile-test */ = {
 			isa = PBXGroup;
 			children = (
-				784C334E2065AA3200392F97 /* Model */,
-				78A311AE2065A463006F03BD /* Supporting Files */,
 				78A311AD2065A449006F03BD /* View */,
 				78A311AC2065A437006F03BD /* Controller */,
 				78A3117920659A88006F03BD /* AppDelegate.swift */,
-				78A3118520659A88006F03BD /* LaunchScreen.storyboard */,
+				784C334E2065AA3200392F97 /* Model */,
+				78A311AE2065A463006F03BD /* Supporting Files */,
 				78A3118820659A88006F03BD /* Info.plist */,
 				78A3118020659A88006F03BD /* bpp_mobile_test.xcdatamodeld */,
 			);
@@ -172,6 +171,7 @@
 		78A311AD2065A449006F03BD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				78A3118520659A88006F03BD /* LaunchScreen.storyboard */,
 				78A3117D20659A88006F03BD /* Login.storyboard */,
 				78F984D32066932100A25F0B /* TimeLine.storyboard */,
 			);
