@@ -26,7 +26,7 @@ public class LoginApi {
         return session
     }()
     
-    open func authenticateUser(_ login: String?, _ password: String?) {
+    open func authenticateUser(_ login: String?, _ password: String?, callback: @escaping (_ error: Error?) -> Void) {
         guard login != nil else {
             print("Failed to load userName")
             return
@@ -37,14 +37,15 @@ public class LoginApi {
             return
         }
         let passUTF8 = password?.data(using: String.Encoding.utf8)
-        
         let passwordBase64 = passUTF8?.base64EncodedString()
-        print(passwordBase64!)
+        let stringBody = "email=\(login!)&password=\(passwordBase64!)"
         
-        var request = ApiUtils.sharedInstance.webserviceRequestBuilder("/login?email=\(String(describing: login!))&password=\(String(describing: passwordBase64!))")
-        request.addValue("application/json;charset=UTF-8", forHTTPHeaderField: "Content-Type")
+        var request = ApiUtils.sharedInstance.webserviceRequestBuilder("/login")
+        request.addValue("application/x-www-form-urlencoded;charset=UTF-8", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.httpMethod = "POST"
+        
+        request.httpBody = stringBody.data(using: String.Encoding.utf8)
 
         let dataTask = dataSession.dataTask(with: request as URLRequest, completionHandler: {
             data, response, error in
@@ -52,15 +53,14 @@ public class LoginApi {
                 switch httpResponse.statusCode {
                 case 200:
                     guard let responseData = data ,let jsonResult = responseData.parseJsonData() else {
-                        print("error")
-//                        callback(ErrorFactory.sharedInstance.buildError(.apiGenericError))
+                        print("Failed to load or parse json data")
                         return
                     }
                     print(jsonResult)
-                    print("200")
-                    break;
+                    return callback(nil)
                 default:
                     print("Unexpected status code \(httpResponse.statusCode)")
+                    return callback(error)
                 }
             }
         })

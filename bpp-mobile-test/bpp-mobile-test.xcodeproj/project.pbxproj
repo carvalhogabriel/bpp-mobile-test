@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01EBC6422066CD2D00A22ADB /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EBC6412066CD2D00A22ADB /* TimeLineViewController.swift */; };
+		01EBC6452066CE3200A22ADB /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EBC6442066CE3200A22ADB /* TimeLineTableViewCell.swift */; };
+		01EBC6472066FB0800A22ADB /* TimeLineApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EBC6462066FB0800A22ADB /* TimeLineApi.swift */; };
 		784C33512065AA4C00392F97 /* LoginApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784C33502065AA4C00392F97 /* LoginApi.swift */; };
 		784C33532065AA9200392F97 /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784C33522065AA9200392F97 /* ApiUtils.swift */; };
 		78A3117A20659A88006F03BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A3117920659A88006F03BD /* AppDelegate.swift */; };
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01EBC6412066CD2D00A22ADB /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
+		01EBC6442066CE3200A22ADB /* TimeLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewCell.swift; sourceTree = "<group>"; };
+		01EBC6462066FB0800A22ADB /* TimeLineApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineApi.swift; sourceTree = "<group>"; };
 		784C33502065AA4C00392F97 /* LoginApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginApi.swift; sourceTree = "<group>"; };
 		784C33522065AA9200392F97 /* ApiUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		78A3117620659A88006F03BD /* bpp-mobile-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bpp-mobile-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01EBC6432066CE1700A22ADB /* TimeLineCells */ = {
+			isa = PBXGroup;
+			children = (
+				01EBC6442066CE3200A22ADB /* TimeLineTableViewCell.swift */,
+			);
+			path = TimeLineCells;
+			sourceTree = "<group>";
+		};
 		784C334E2065AA3200392F97 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +117,7 @@
 				784C33502065AA4C00392F97 /* LoginApi.swift */,
 				784C33522065AA9200392F97 /* ApiUtils.swift */,
 				78F984CD20666BEA00A25F0B /* DataRequestDelegate.swift */,
+				01EBC6462066FB0800A22ADB /* TimeLineApi.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -164,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				78A3117B20659A88006F03BD /* LoginViewController.swift */,
+				01EBC6412066CD2D00A22ADB /* TimeLineViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +187,7 @@
 		78A311AD2065A449006F03BD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				01EBC6432066CE1700A22ADB /* TimeLineCells */,
 				78A3118520659A88006F03BD /* LaunchScreen.storyboard */,
 				78A3117D20659A88006F03BD /* Login.storyboard */,
 				78F984D32066932100A25F0B /* TimeLine.storyboard */,
@@ -338,9 +355,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01EBC6452066CE3200A22ADB /* TimeLineTableViewCell.swift in Sources */,
+				01EBC6422066CD2D00A22ADB /* TimeLineViewController.swift in Sources */,
 				784C33512065AA4C00392F97 /* LoginApi.swift in Sources */,
 				784C33532065AA9200392F97 /* ApiUtils.swift in Sources */,
 				78F984D220666E8700A25F0B /* TokenRefresher.swift in Sources */,
+				01EBC6472066FB0800A22ADB /* TimeLineApi.swift in Sources */,
 				78A3117C20659A88006F03BD /* LoginViewController.swift in Sources */,
 				78A3118220659A88006F03BD /* bpp_mobile_test.xcdatamodeld in Sources */,
 				78F984CE20666BEA00A25F0B /* DataRequestDelegate.swift in Sources */,
@@ -513,11 +533,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XKFCJ2D2M6;
 				INFOPLIST_FILE = "bpp-mobile-test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bpp-mobile-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -528,11 +549,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XKFCJ2D2M6;
 				INFOPLIST_FILE = "bpp-mobile-test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bpp-mobile-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
