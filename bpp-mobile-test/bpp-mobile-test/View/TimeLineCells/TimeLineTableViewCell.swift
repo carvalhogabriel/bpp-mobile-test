@@ -2,7 +2,7 @@
 //  TimeLineTableCell.swift
 //  bpp-mobile-test
 //
-//  Created by School Picture on 24/03/2018.
+//  Created by Gabriel Carvalho on 24/03/2018.
 //  Copyright © 2018 GabrielGuerrero. All rights reserved.
 //
 

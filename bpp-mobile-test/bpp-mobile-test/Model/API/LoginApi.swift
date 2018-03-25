@@ -26,7 +26,7 @@ public class LoginApi {
         return session
     }()
     
-    open func authenticateUser(_ login: String?, _ password: String?, callback: @escaping (_ error: Error?) -> Void) {
+    open func authenticateUser(_ login: String?, _ password: String?, callback: @escaping (_ error: NSError?) -> Void) {
         guard login != nil else {
             print("Failed to load userName")
             return
@@ -56,11 +56,14 @@ public class LoginApi {
                         print("Failed to load or parse json data")
                         return
                     }
-                    print(jsonResult)
-                    return callback(nil)
+                    if let successCode = jsonResult["code"] as? String, successCode == "200"{
+                        return callback(nil)
+                    } else {
+                        return callback(NSError(domain: "bpp-test", code: 300, userInfo: ["Usuario Invalido": "300"]))
+                    }
                 default:
                     print("Unexpected status code \(httpResponse.statusCode)")
-                    return callback(error)
+                    return callback(NSError(domain: "bpp-test", code: httpResponse.statusCode, userInfo: ["Generic Error": "0"]))
                 }
             }
         })

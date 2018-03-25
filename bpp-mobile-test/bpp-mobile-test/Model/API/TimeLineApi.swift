@@ -2,7 +2,7 @@
 //  TimeLineApi.swift
 //  bpp-mobile-test
 //
-//  Created by School Picture on 24/03/2018.
+//  Created by Gabriel Carvalho on 24/03/2018.
 //  Copyright © 2018 GabrielGuerrero. All rights reserved.
 //
 
@@ -26,7 +26,7 @@ public class TimeLineApi {
         return session
     }()
     
-    open func fetchTimeLine(callback: @escaping(_ timeLines: [NSDictionary]?, _ error: Error?) -> Void) {
+    open func fetchTimeLine(callback: @escaping(_ timeLines: [NSDictionary]?, _ error: NSError?) -> Void) {
         var request = ApiUtils.sharedInstance.webserviceRequestBuilder("/invoice")
         request.addValue("application/json;charset=UTF-8", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -43,7 +43,7 @@ public class TimeLineApi {
                     callback(jsonResult, nil)
                 default:
                     print("Unexpected status code \(httpResponse.statusCode)")
-                    callback(nil, error)
+                    callback(nil, NSError(domain: "bpp-test", code: 0, userInfo: ["Generic Error": "0"]))
                     
                 }
             }
