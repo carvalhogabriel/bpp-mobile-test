@@ -17,12 +17,14 @@ class LoginViewController: UIViewController {
     
     // MARK: - @IBActions
     @IBAction func confirmButtonClick(_ sender: UIButton) {
+        self.confirmButton.isEnabled = false
         self.buildLoadingAlert()
         LoginApi.sharedInstance.authenticateUser(loginTextView.text, passwordTextView.text, callback: {
             error in
             if error == nil {
                 self.fetchTimeLine()
             } else {
+                self.confirmButton.isEnabled = true
                 if error?.code == 300 {
                     self.dismiss(animated: true, completion: nil)
                     self.buildUserError()

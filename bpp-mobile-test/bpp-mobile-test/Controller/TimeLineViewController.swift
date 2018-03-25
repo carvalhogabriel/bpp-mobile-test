@@ -66,9 +66,11 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
             case MccDescriptionEnum.FastFood.rawValue?:
                 timeLineCell.icon.image = UIImage(named: MccDescriptionEnum.FastFood.rawValue)
             case MccDescriptionEnum.Convenience.rawValue?:
-                timeLineCell.icon.image = UIImage(named: MccDescriptionEnum.Convenience.rawValue)
+                timeLineCell.icon.image = UIImage(named: MccDescriptionEnum.ConvenienceImageString.rawValue)
             case MccDescriptionEnum.Bakery.rawValue?:
                 timeLineCell.icon.image = UIImage(named: MccDescriptionEnum.Bakery.rawValue)
+            case MccDescriptionEnum.Wholesale.rawValue?:
+                timeLineCell.icon.image = UIImage(named: MccDescriptionEnum.Wholesale.rawValue)
             default: break
 
             }
@@ -79,8 +81,13 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
                 timeLineCell.amount.text = "$ \(amount.description)"
             }
             
-            if let date = item["transactionFormattedDate"] as? String {
-                timeLineCell.date.text = date
+            if let dateString = item["transactionFormattedDate"] as? String {
+                let dateComponents = dateString.components(separatedBy: "T")
+                let splitDate = dateComponents[0]
+                let splitTime = dateComponents[1]
+                let date = DateUtils.sharedInstance.dateBR(splitDate)
+                let stringDateBR = DateUtils.sharedInstance.dateToLocalDateStringBR(date!)
+                timeLineCell.date.text = "\(stringDateBR) \(splitTime)"
             }
             
             timeLineCell.status.text = item["transactionStatus"] as? String

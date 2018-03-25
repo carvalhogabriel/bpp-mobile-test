@@ -118,10 +118,6 @@
                                 <exclude reference="hMg-rE-sd7"/>
                                 <exclude reference="lqa-ri-yoC"/>
                                 <exclude reference="xlW-3D-Aa3"/>
-                                <exclude reference="4oO-jG-Yjz"/>
-                                <exclude reference="V5C-sX-GaZ"/>
-                                <exclude reference="YDF-Zn-exO"/>
-                                <exclude reference="aGQ-QA-hat"/>
                                 <exclude reference="0aj-Bp-oXk"/>
                                 <exclude reference="B1c-IJ-rKE"/>
                                 <exclude reference="ivN-7v-xKp"/>
@@ -134,6 +130,10 @@
                                 <exclude reference="t66-Ea-6QQ"/>
                                 <exclude reference="tDO-hf-ikh"/>
                                 <exclude reference="ygD-qX-W1d"/>
+                                <exclude reference="4oO-jG-Yjz"/>
+                                <exclude reference="V5C-sX-GaZ"/>
+                                <exclude reference="YDF-Zn-exO"/>
+                                <exclude reference="aGQ-QA-hat"/>
                                 <exclude reference="3t8-gx-vYJ"/>
                                 <exclude reference="9vz-Vt-Tmt"/>
                                 <exclude reference="IU2-WT-Pg2"/>
@@ -152,10 +152,6 @@
                                 <exclude reference="hMg-rE-sd7"/>
                                 <include reference="lqa-ri-yoC"/>
                                 <include reference="xlW-3D-Aa3"/>
-                                <include reference="4oO-jG-Yjz"/>
-                                <exclude reference="V5C-sX-GaZ"/>
-                                <exclude reference="YDF-Zn-exO"/>
-                                <include reference="aGQ-QA-hat"/>
                                 <exclude reference="0aj-Bp-oXk"/>
                                 <exclude reference="B1c-IJ-rKE"/>
                                 <include reference="ivN-7v-xKp"/>
@@ -168,6 +164,10 @@
                                 <exclude reference="t66-Ea-6QQ"/>
                                 <include reference="tDO-hf-ikh"/>
                                 <include reference="ygD-qX-W1d"/>
+                                <include reference="4oO-jG-Yjz"/>
+                                <exclude reference="V5C-sX-GaZ"/>
+                                <exclude reference="YDF-Zn-exO"/>
+                                <include reference="aGQ-QA-hat"/>
                                 <include reference="3t8-gx-vYJ"/>
                                 <exclude reference="9vz-Vt-Tmt"/>
                                 <include reference="IU2-WT-Pg2"/>
@@ -184,14 +184,14 @@
                                 <include reference="rxO-2S-WZP"/>
                                 <include reference="hH7-f1-ZoA"/>
                                 <include reference="hMg-rE-sd7"/>
-                                <include reference="V5C-sX-GaZ"/>
-                                <include reference="YDF-Zn-exO"/>
                                 <include reference="0aj-Bp-oXk"/>
                                 <include reference="B1c-IJ-rKE"/>
                                 <include reference="vGe-ld-IoE"/>
                                 <include reference="CEY-AG-7aZ"/>
                                 <include reference="ehX-fe-ibU"/>
                                 <include reference="t66-Ea-6QQ"/>
+                                <include reference="V5C-sX-GaZ"/>
+                                <include reference="YDF-Zn-exO"/>
                                 <include reference="9vz-Vt-Tmt"/>
                                 <include reference="NJi-f6-AgD"/>
                                 <include reference="vS6-E7-Ies"/>
@@ -223,14 +223,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeLineCell" rowHeight="80" id="BCh-rD-N04" customClass="TimeLineTableViewCell" customModule="bpp_mobile_test" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeLineCell" rowHeight="80" id="BCh-rD-N04" customClass="TimeLineTableViewCell" customModule="bpp_mobile_test" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BCh-rD-N04" id="elH-AT-rj8">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Restaurants" translatesAutoresizingMaskIntoConstraints="NO" id="b2P-K4-FsC">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bpp" translatesAutoresizingMaskIntoConstraints="NO" id="b2P-K4-FsC">
                                                     <rect key="frame" x="14" y="18" width="44" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="4Ky-8W-TKs"/>
@@ -328,7 +328,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Restaurants" width="80" height="80"/>
         <image name="bpp" width="256" height="256"/>
     </resources>
 </document>

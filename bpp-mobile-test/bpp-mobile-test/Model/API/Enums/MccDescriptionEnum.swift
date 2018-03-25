@@ -11,6 +11,8 @@ import Foundation
 public enum MccDescriptionEnum: String {
     case Restaurants = "Restaurants",
         FastFood = "Fast Food",
-        Convenience = "Convenience",
-        Bakery = "Bakery"
+        Convenience = "Convenience / Delicatessens",
+        ConvenienceImageString = "Convenience",
+        Bakery = "Bakery",
+        Wholesale = "Wholesale"
 }

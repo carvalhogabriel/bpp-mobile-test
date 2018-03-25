@@ -12,22 +12,24 @@ open class DateUtils {
     
     open static let sharedInstance = DateUtils()
     
-    open func dateFromString(_ date: String?) -> Date? {
-        var result: Date?
-        if let dateValue = date {
-            let dateFormatter = defaultDateFormatter()
-            result = dateFormatter.date(from: dateValue)
-        } else {
-            result = nil
-        }
-        return result
+    open func dateBR(_ dateString: String) -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        let date = dateFormatter.date(from: dateString)
+        return date
     }
     
-    open func defaultDateFormatter() -> DateFormatter {
+    open func dateToLocalDateStringBR(_ date: Date, timezone: TimeZone? = nil) -> String {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .short
-        dateFormatter.timeStyle = .short
-        dateFormatter.doesRelativeDateFormatting = true
-        return dateFormatter
+        if let tz = timezone {
+            dateFormatter.timeZone = tz
+        }
+        
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        
+        return dateFormatter.string(from: date)
+        
     }
+    
 }
