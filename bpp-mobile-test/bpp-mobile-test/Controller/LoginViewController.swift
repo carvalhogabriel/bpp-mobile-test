@@ -98,8 +98,9 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.prepareDismissKeyboard()
-        loginTextView.text = "waldisney@brasilprepagos.com.br"
-        passwordTextView.text = "Br@silPP123"
+        //para náo ter que ficar digitando toda hora.
+        self.loginTextView.text = "waldisney@brasilprepagos.com.br"
+        self.passwordTextView.text = "Br@silPP123"
     }
     
     override func didReceiveMemoryWarning() {
