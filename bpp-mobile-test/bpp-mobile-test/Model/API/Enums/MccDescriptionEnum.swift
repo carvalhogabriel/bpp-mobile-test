@@ -2,7 +2,7 @@
 //  MccDesciptionEnum.swift
 //  bpp-mobile-test
 //
-//  Created by School Picture on 25/03/2018.
+//  Created by Gabriel Carvalho on 25/03/2018.
 //  Copyright © 2018 GabrielGuerrero. All rights reserved.
 //
 
