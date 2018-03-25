@@ -220,7 +220,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="r01-ET-vbb">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TimeLineCell" rowHeight="80" id="BCh-rD-N04" customClass="TimeLineTableViewCell" customModule="bpp_mobile_test" customModuleProvider="target">
@@ -243,7 +243,7 @@
                                                         <constraint firstAttribute="height" constant="12" id="kas-8K-nBq"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="0.4195916983816359" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KFC Campinas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3go-6V-kcU">
@@ -314,7 +314,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="r01-ET-vbb" firstAttribute="top" secondItem="xHK-BI-Pc0" secondAttribute="top" id="2aW-71-Upz"/>
+                            <constraint firstItem="r01-ET-vbb" firstAttribute="top" secondItem="xHK-BI-Pc0" secondAttribute="top" constant="20" id="2aW-71-Upz"/>
                             <constraint firstItem="r01-ET-vbb" firstAttribute="leading" secondItem="Ekt-f5-M9Y" secondAttribute="leading" id="4Rb-SS-e3I"/>
                             <constraint firstItem="r01-ET-vbb" firstAttribute="bottom" secondItem="Ekt-f5-M9Y" secondAttribute="bottom" id="AH3-tP-VsI"/>
                             <constraint firstItem="r01-ET-vbb" firstAttribute="trailing" secondItem="Ekt-f5-M9Y" secondAttribute="trailing" id="DpK-tw-tcm"/>
@@ -324,7 +324,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1G-wB-RN2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1065" y="117"/>
+            <point key="canvasLocation" x="1064.8" y="116.49175412293854"/>
         </scene>
     </scenes>
     <resources>

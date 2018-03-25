@@ -90,7 +90,19 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
                 timeLineCell.date.text = "\(stringDateBR) \(splitTime)"
             }
             
-            timeLineCell.status.text = item["transactionStatus"] as? String
+            if let status = item["transactionStatus"] as? String {
+                timeLineCell.status.text = status
+                switch status {
+                case StatusEnum.Settled.rawValue:
+                    timeLineCell.status.textColor = UIColor(red: 0/255, green: 135/255, blue: 0/255, alpha: 1.0)
+                case StatusEnum.Declined.rawValue:
+                    timeLineCell.status.textColor = UIColor(red: 150/255, green: 38/255, blue: 0/255, alpha: 1.0)
+                case StatusEnum.Pending.rawValue:
+                    timeLineCell.status.textColor = UIColor(red: 210/255, green: 170/255, blue: 0/255, alpha: 1.0)
+                default: break
+                }
+                
+            }
             
             return timeLineCell
         }

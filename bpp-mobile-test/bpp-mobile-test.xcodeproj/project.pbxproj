@@ -11,6 +11,7 @@
 		01D5780F20680F1700B07FAD /* MccDescriptionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5780E20680F1700B07FAD /* MccDescriptionEnum.swift */; };
 		01D5781120681D6200B07FAD /* AuthenticationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5781020681D6200B07FAD /* AuthenticationTest.swift */; };
 		01D5781320682BD700B07FAD /* TimeLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5781220682BD700B07FAD /* TimeLineTests.swift */; };
+		01D578152068666200B07FAD /* StatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D578142068666200B07FAD /* StatusEnum.swift */; };
 		01EBC6422066CD2D00A22ADB /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EBC6412066CD2D00A22ADB /* TimeLineViewController.swift */; };
 		01EBC6452066CE3200A22ADB /* TimeLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EBC6442066CE3200A22ADB /* TimeLineTableViewCell.swift */; };
 		01EBC6472066FB0800A22ADB /* TimeLineApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EBC6462066FB0800A22ADB /* TimeLineApi.swift */; };
@@ -51,6 +52,7 @@
 		01D5780E20680F1700B07FAD /* MccDescriptionEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MccDescriptionEnum.swift; sourceTree = "<group>"; };
 		01D5781020681D6200B07FAD /* AuthenticationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTest.swift; sourceTree = "<group>"; };
 		01D5781220682BD700B07FAD /* TimeLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTests.swift; sourceTree = "<group>"; };
+		01D578142068666200B07FAD /* StatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusEnum.swift; sourceTree = "<group>"; };
 		01EBC6412066CD2D00A22ADB /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 		01EBC6442066CE3200A22ADB /* TimeLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineTableViewCell.swift; sourceTree = "<group>"; };
 		01EBC6462066FB0800A22ADB /* TimeLineApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineApi.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				01D5780E20680F1700B07FAD /* MccDescriptionEnum.swift */,
+				01D578142068666200B07FAD /* StatusEnum.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				01D5780F20680F1700B07FAD /* MccDescriptionEnum.swift in Sources */,
 				01D5780C2067280400B07FAD /* DateUtils.swift in Sources */,
 				01EBC6452066CE3200A22ADB /* TimeLineTableViewCell.swift in Sources */,
+				01D578152068666200B07FAD /* StatusEnum.swift in Sources */,
 				01EBC6422066CD2D00A22ADB /* TimeLineViewController.swift in Sources */,
 				784C33512065AA4C00392F97 /* LoginApi.swift in Sources */,
 				784C33532065AA9200392F97 /* ApiUtils.swift in Sources */,
