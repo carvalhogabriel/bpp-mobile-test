@@ -9,7 +9,7 @@
 import Foundation
 
 public enum StatusEnum: String {
-    case Settled = "Settled",
-        Pending = "Pending",
-        Declined = "Declined"
+    case    Settled     = "Settled",
+            Pending     = "Pending",
+            Declined    = "Declined"
 }

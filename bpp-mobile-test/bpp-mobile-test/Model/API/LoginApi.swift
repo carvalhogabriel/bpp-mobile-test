@@ -26,6 +26,7 @@ public class LoginApi {
         return session
     }()
     
+    //Método para autenticar o usuario
     open func authenticateUser(_ login: String?, _ password: String?, callback: @escaping (_ error: NSError?) -> Void) {
         guard login != nil else {
             print("Failed to load userName")
@@ -36,9 +37,8 @@ public class LoginApi {
             print("Failed to load userPassword")
             return
         }
-        let passUTF8 = password?.data(using: String.Encoding.utf8)
-        let passwordBase64 = passUTF8?.base64EncodedString()
-        let stringBody = "email=\(login!)&password=\(passwordBase64!)"
+        
+        let stringBody = "email=\(login!)&password=\(encodePassword(password!))"
         
         var request = ApiUtils.sharedInstance.webserviceRequestBuilder("/login")
         request.addValue("application/x-www-form-urlencoded;charset=UTF-8", forHTTPHeaderField: "Content-Type")
@@ -69,4 +69,10 @@ public class LoginApi {
         })
         dataTask.resume()
         }
+    
+    private func encodePassword(_ password: String) -> String {
+        let passUTF8 = password.data(using: String.Encoding.utf8)
+        let passwordBase64 = passUTF8?.base64EncodedString()
+        return passwordBase64!
+    }
 }

@@ -9,10 +9,10 @@
 import Foundation
 
 public enum MccDescriptionEnum: String {
-    case Restaurants = "Restaurants",
-        FastFood = "Fast Food",
-        Convenience = "Convenience / Delicatessens",
-        ConvenienceImageString = "Convenience",
-        Bakery = "Bakery",
-        Wholesale = "Wholesale"
+    case    Restaurants             = "Restaurants",
+            FastFood                = "Fast Food",
+            Convenience             = "Convenience / Delicatessens",
+            ConvenienceImageString  = "Convenience",
+            Bakery                  = "Bakery",
+            Wholesale               = "Wholesale"
 }

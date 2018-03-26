@@ -51,6 +51,7 @@ class LoginViewController: UIViewController {
         }
     }
     
+    //Método para criar um alerta de loading
     private func buildLoadingAlert() {
         let loadingAlert = UIAlertController(title: "", message: "\n\n\n\n\n", preferredStyle: .alert)
         let indicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
@@ -62,6 +63,7 @@ class LoginViewController: UIViewController {
         self.present(loadingAlert, animated: true, completion: nil)
     }
     
+    //Métodos para fechar o teclado
     private func prepareDismissKeyboard() {
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
@@ -77,6 +79,7 @@ class LoginViewController: UIViewController {
         view.endEditing(true)
     }
     
+    //Método para criar um alerta de erro genérico
     private func buildAlertError() {
         let alertError = UIAlertController(title: "Error!", message: "Generic Error", preferredStyle: .alert)
         alertError.addAction(UIAlertAction(title: "Ok", style: .default, handler: {
@@ -86,6 +89,7 @@ class LoginViewController: UIViewController {
         self.present(alertError, animated: true, completion: nil)
     }
     
+    //Método para criar um alerta de erro de usuario invalido
     private func buildUserError() {
         let userAlertError = UIAlertController(title: "Error!", message: "Invalid Usuer", preferredStyle: .alert)
         userAlertError.addAction(UIAlertAction(title: "Ok", style: .default, handler: {
@@ -100,9 +104,10 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.prepareDismissKeyboard()
-        //para náo ter que ficar digitando toda hora.
-        self.loginTextView.text = "waldisney@brasilprepagos.com.br"
-        self.passwordTextView.text = "Br@silPP123"
+        
+        //para não ter que ficar digitando toda hora.
+//        self.loginTextView.text = "waldisney@brasilprepagos.com.br"
+//        self.passwordTextView.text = "Br@silPP123"
     }
     
     override func didReceiveMemoryWarning() {
@@ -110,7 +115,7 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // MARK : - Navigation
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         super.prepare(for: segue, sender: sender)
         

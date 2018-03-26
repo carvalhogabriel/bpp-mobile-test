@@ -25,6 +25,7 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
         self.present(genericError, animated: true, completion: nil)
     }
     
+    //Método para pegar a contagem de linhas que terá a tableView
     private func prepareTableView() {
         if self.timeLineResults.count > 0 {
             self.numberOfRowsInSection = self.timeLineResults.count
@@ -58,6 +59,7 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
         if let item = self.timeLineResults[indexPath.row] as? NSDictionary {
             let timeLineCell = tableView.dequeueReusableCell(withIdentifier: "TimeLineCell", for: indexPath) as!  TimeLineTableViewCell
             
+            //Descricao do tipo de lugar que foi realizada a transacao
             let mccDescription = item["mccDescription"] as? String
             
             switch mccDescription {
@@ -75,12 +77,13 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
 
             }
             timeLineCell.merchantDescription.text = mccDescription
+            //Nome do local da transacao
             timeLineCell.name.text = item["merchantName"] as? String
-            
+            //Valor da transacao
             if let amount = item["transactionAmount"] as? Double {
                 timeLineCell.amount.text = "$ \(amount.description)"
             }
-            
+            //Data da transacao
             if let dateString = item["transactionFormattedDate"] as? String {
                 let dateComponents = dateString.components(separatedBy: "T")
                 let splitDate = dateComponents[0]
@@ -89,7 +92,7 @@ class TimeLineViewController: UIViewController, UITableViewDelegate, UITableView
                 let stringDateBR = DateUtils.sharedInstance.dateToLocalDateStringBR(date!)
                 timeLineCell.date.text = "\(stringDateBR) \(splitTime)"
             }
-            
+            //Status da transacao
             if let status = item["transactionStatus"] as? String {
                 timeLineCell.status.text = status
                 switch status {
